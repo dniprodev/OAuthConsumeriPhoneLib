@@ -1,0 +1,4 @@
+build/*
+OAuthConsumer-iPhoneLib.xcodeproj/*.mode1v3
+OAuthConsumer-iPhoneLib.xcodeproj/*.pbxuser
+/build/
