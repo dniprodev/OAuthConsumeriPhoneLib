@@ -73,7 +73,7 @@
 			} else if ([[elements objectAtIndex:0] isEqualToString:@"oauth_verifier"]) {
 				self.pin = [elements objectAtIndex:1];
 			} else if ([[elements objectAtIndex:0] isEqualToString:@"oauth_expires_in"]) {
-				self.expiresIn = [[NSDate date] addTimeInterval: ( [[elements objectAtIndex:1] integerValue] - ( 10 * 60 ) ) ];
+				self.expiresIn = [[NSDate date] dateByAddingTimeInterval: ( [[elements objectAtIndex:1] integerValue] - ( 10 * 60 ) ) ];
 			}
 		}
 	}    
